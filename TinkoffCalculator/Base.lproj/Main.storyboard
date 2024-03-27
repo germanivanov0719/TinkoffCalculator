@@ -44,7 +44,7 @@
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gp0-Xm-cEo"/>
+                                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u4l-ER-Ooo"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -101,7 +101,7 @@
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kQW-5u-aqN"/>
+                                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iMj-Qz-yES"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -155,7 +155,7 @@
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gkf-VQ-0ZD"/>
+                                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gcO-xC-JjP"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -209,7 +209,7 @@
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fA7-YL-wfN"/>
+                                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oxg-hw-vc6"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -250,6 +250,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="=">
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jrp-Jd-Rej"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
@@ -261,16 +264,28 @@
                                     <constraint firstItem="OR9-0x-fif" firstAttribute="width" secondItem="Gsk-4U-NrO" secondAttribute="width" multiplier="0.25" id="rAI-LF-dq3"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label345672222222222222222222" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="TB1-8I-6BO" userLabel="Label">
+                                <rect key="frame" x="20" y="241" width="374" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Gsk-4U-NrO" firstAttribute="top" secondItem="TB1-8I-6BO" secondAttribute="bottom" constant="20" id="GDx-8F-gmg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gsk-4U-NrO" secondAttribute="bottom" id="GYj-sW-tyt"/>
                             <constraint firstItem="Gsk-4U-NrO" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="XLy-0Z-jFZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TB1-8I-6BO" secondAttribute="trailing" constant="20" id="ZAq-u2-vVq"/>
                             <constraint firstItem="Gsk-4U-NrO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZIE-Vn-BO2"/>
                             <constraint firstItem="Gsk-4U-NrO" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.65" id="scd-h1-Ge3"/>
+                            <constraint firstItem="TB1-8I-6BO" firstAttribute="leading" secondItem="Gsk-4U-NrO" secondAttribute="leading" constant="20" id="uNb-j2-gL9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="TB1-8I-6BO" id="kjD-F2-d6y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
